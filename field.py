@@ -1,9 +1,5 @@
 class Field:
-    def __init__(self):
-        self.field_size = 10
-        self.ships = []
+    FIELD_SIZE = 10
+    def __init__(self):        
+        self.matrix = Field.FIELD_SIZE * [Field.FIELD_SIZE * [None]]
         
-    
-    def create_field(self):
-        field = self.field_size * [self.field_size * [None]]
-        return field
